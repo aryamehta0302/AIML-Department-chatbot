@@ -1,42 +1,63 @@
+# 🤖 AIML Department Chatbot Assistant
 
-# 🎓 AI-Enabled Intelligent Assistant for Departmental Query Management
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python)](https://www.python.org/)
+[![Flask](https://img.shields.io/badge/Flask-Framework-black?logo=flask)](https://flask.palletsprojects.com/)
+[![Google Gemini](https://img.shields.io/badge/Gemini-API-blueviolet?logo=google)](https://ai.google.dev/)
+[![TF-IDF](https://img.shields.io/badge/TF--IDF-Retrieval-green)]()
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Active-success.svg)]()
 
-An interactive chatbot system built for the **AIML Department at CSPIT, CHARUSAT** to handle queries about admissions, faculty, courses, research, and more.  
-This assistant combines **local document indexing (TF-IDF)** with **Gemini AI** to provide professional, safe, and structured responses.
+> 🎓 Smart departmental assistant for the **AI & Machine Learning Department**, built using **Flask**, **Google Gemini API**, and **TF-IDF retrieval**.
+
+---
+
+## 🎬 Demo
+
+🎥 **Watch the full working demo:**  
+<video src="assets/demo.mp4" width="100%" controls></video>
 
 ---
 
 ## ✨ Features
-- 🗂️ **Knowledge Base Search**: Answers based on department data (faculty, courses, admissions, etc.).  
-- 🧠 **Gemini Integration**: Polished, natural, and professional responses.  
-- 🔒 **Guardrails**: Blocks unsafe/off-topic queries (violence, NSFW, etc.).  
-- 🎨 **UI/UX Improvements**: Modern responsive interface with Bootstrap.  
-- 📝 **Smart Formatting**: Replies use bullet points, bold text, and tables where needed.  
-- ⚡ **Lightweight & Free**: Uses TF-IDF for retrieval (no embedding quota issues).  
+
+✅ **AI-Powered Responses** — Uses **Google Gemini Flash** model  
+✅ **TF-IDF Context Retrieval** — Retrieves relevant knowledge base data  
+✅ **Multilingual Support** — English, Hindi, Gujarati, Tamil, Telugu  
+✅ **Voice Input & Output** — Speak your query, get audio responses  
+✅ **Follow-up Memory** — Remembers last 2 questions for context  
+✅ **Clean UI** — Built with Bootstrap 5  
+✅ **Guardrails** — Blocks unsafe queries  
+✅ **Quick Links + FAQ Section** — Navigation-friendly design
 
 ---
 
-## 🛠️ Tech Stack
-- **Frontend:** HTML, CSS (Bootstrap), JavaScript  
-- **Backend:** Python (Flask)  
-- **AI Model:** Google Gemini (gemini-1.5-flash)  
-- **Retrieval:** TF-IDF (Scikit-learn)  
-- **Vector Storage (legacy):** FAISS (optional)  
+## 🧠 Tech Stack
+
+| Layer | Technology |
+|-------|-------------|
+| **Frontend** | HTML5, CSS3, Bootstrap 5, JavaScript |
+| **Backend** | Flask (Python) |
+| **AI Model** | Google Gemini (Flash) |
+| **Search** | TF-IDF + Cosine Similarity |
+| **Translation** | `deep-translator` |
+| **Voice** | Web Speech API |
 
 ---
 
-## 🚀 Getting Started
+## ⚙️ Setup Instructions
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/aiml-department-assistant.git
-cd aiml-department-assistant
+git clone <your-repo-url>
+cd AIML-Department-chatbot
 ```
 
-### 2. Create a virtual environment
+### 2. Create and activate virtual environment
 ```bash
 python -m venv venv
-source venv/bin/activate   # On Windows: venv\Scripts\activate
+venv\Scripts\activate     # On Windows
+# OR
+source venv/bin/activate    # On Mac/Linux
 ```
 
 ### 3. Install dependencies
@@ -44,54 +65,41 @@ source venv/bin/activate   # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 4. Add your API key
-Create a `.env` file in the project root:
-```env
+### 4. Add your environment variable
+Create a `.env` file:
+```
 GEMINI_API_KEY=your_api_key_here
 ```
 
-### 5. Build the TF-IDF index
+### 5. Build your TF-IDF index
 ```bash
 python build_index.py
 ```
 
-### 6. Run the server
+### 6. Run the app
 ```bash
 python app.py
 ```
-Visit 👉 `http://127.0.0.1:5000`
+Go to 👉 **http://127.0.0.1:5000/**
 
 ---
 
-## 📂 Project Structure
-```
-├── app.py              # Flask backend with chatbot logic
-├── build_index.py      # Builds TF-IDF index from /data files
-├── data/               # Department data in .txt format
-├── templates/          # HTML pages (index, faculty, admissions, etc.)
-├── static/             # CSS, JS, images
-├── faiss_index/        # Stores docs.pkl, vectorizer.pkl, vectors.npy
-├── requirements.txt    # Python dependencies
-└── README.md           # Project documentation
-```
+## 🌍 Supported Languages
+
+| Language | Code |
+|----------|------|
+| English  | `en` |
+| Hindi    | `hi` |
+| Gujarati | `gu` |
+| Tamil    | `ta` |
+| Telugu   | `te` |
 
 ---
 
-## 📸 Screenshots (placeholders)
-![Chatbot Screenshot](static/images/demo.png)  
-*Interactive chatbot UI for AIML Department queries*
+## 📜 License
+
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-## 📊 Future Enhancements
-- Hybrid retrieval (TF-IDF + embeddings) for better accuracy.  
-- Integration of structured data (JSON/CSV for faculty/courses).  
-- Improved multilingual support.  
-- Deployment on Vercel/Render/Heroku.  
-
----
-
-## 🏆 Credits
-Developed by **Arya Mehta (23AIML036)** under guidance of faculty, AIML Department, CSPIT CHARUSAT.
-
----
+⭐ **Star this project** if you like it!
