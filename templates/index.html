@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIML Department Assistant</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <!-- Header -->
+  <header class="chat-header py-3 px-4 bg-primary text-white">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="AIML Logo" class="department-logo me-2" style="height:40px;">
+        <h4 class="mb-0 fw-semibold">AIML Department Assistant</h4>
+      </div>
+      <nav class="d-none d-md-flex gap-4">
+        <a href="#knowledge-base" class="nav-link text-white">Knowledge Base</a>
+        <a href="#contact" class="nav-link text-white">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="container my-4">
+    <div class="row">
+      <!-- Sidebar Links -->
+      <aside class="col-md-3 mb-4">
+        <div class="quick-links h-100 p-3 border rounded shadow-sm">
+          <h5 class="mb-3">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="{{ url_for('admissions') }}"><i class="bi bi-person-add me-2"></i>Admissions</a></li>
+            <li><a href="{{ url_for('courses') }}"><i class="bi bi-book me-2"></i>Courses</a></li>
+            <li><a href="{{ url_for('faculty') }}"><i class="bi bi-people me-2"></i>Faculty</a></li>
+            <li><a href="{{ url_for('research') }}"><i class="bi bi-search me-2"></i>Research</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <!-- Chatbox -->
+      <section class="col-md-9">
+        <div class="card shadow-sm">
+          <div class="card-body">
+
+            <!-- 🌐 Language & Voice Controls -->
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-3">
+              <div class="d-flex align-items-center gap-2">
+                <label for="languageSelect" class="fw-semibold">🌐 Language:</label>
+                <select class="form-select translation-select" id="languageSelect">
+                  <option value="en" selected>English</option>
+                  <option value="hi">हिन्दी</option>
+                  <option value="gu">ગુજરાતી</option>
+                </select>
+              </div>
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="voiceToggle" checked>
+                <label class="form-check-label" for="voiceToggle">🔊 Auto Voice</label>
+              </div>
+            </div>
+
+            <!-- 💬 Chat Window -->
+            <div id="chatBox" class="chat-box mb-3 border rounded p-3" style="height:400px; overflow-y:auto;">
+              <div class="message bot-message">
+                <div class="message-content bot-content">
+                  <div class="fw-bold mb-1">AIML Assistant</div>
+                  <div class="message-text">
+                    Welcome to the AI & Machine Learning Department! How can I assist you today?
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ✍️ Input with Mic -->
+            <form id="chatForm" class="d-flex gap-2 align-items-center">
+              <input type="text" id="userInput" class="form-control" placeholder="Type or speak your message...">
+              <button type="button" id="micToggle" class="btn btn-secondary" title="Toggle voice input">
+                <i class="bi bi-mic"></i>
+              </button>
+              <button type="submit" class="btn btn-primary">
+                <i class="bi bi-send"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- FAQ -->
+    <section class="mt-5" id="knowledge-base">
+      <h3 class="section-title mb-3">Frequently Asked Questions</h3>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+              How can parents contact department staff?
+            </button>
+          </h2>
+          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Parents can contact department staff through the university website or visit the office during working hours (9:00 AM – 5:00 PM).
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+              What programs are available in AIML department?
+            </button>
+          </h2>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              The AIML department offers B.Tech in Artificial Intelligence & Machine Learning, M.Tech in AI & Data Science, and PhD programs.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="mt-5" id="contact">
+      <h3 class="section-title mb-3">Contact Support</h3>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card p-3">
+            <h5>Department Office</h5>
+            <p><i class="bi bi-geo-alt me-2"></i>University Name<br>AI & ML Department<br>City, State, ZIP Code</p>
+            <p><i class="bi bi-telephone me-2"></i>+91-123-4567890</p>
+            <p><i class="bi bi-envelope me-2"></i>aiml@university.edu</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <form class="contact-form p-3">
+            <div class="mb-3">
+              <label class="form-label">Name</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input type="email" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea class="form-control" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 University Name. All rights reserved.</p>
+      <p class="mb-0">AI & Machine Learning Department</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

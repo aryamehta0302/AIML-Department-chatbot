@@ -1,0 +1,60 @@
+# 🧠 AIML Department Chatbot - .gitignore
+
+# Virtual Environment
+venv/
+env/
+.venv/
+ENV/
+
+# Environment Variables
+.env
+.env.*
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.sqlite3
+
+# Logs
+*.log
+*.out
+*.err
+
+# IDE & Editor Files
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Node modules (if frontend JS used)
+node_modules/
+
+# Build / Dist
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# Temporary Files
+*.tmp
+*.bak
+*.orig
+
+# OS Files
+desktop.ini
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Coverage and testing
+.coverage
+htmlcov/
+.tox/
+pytest_cache/
+
+# Misc
+*.local

@@ -1,0 +1,110 @@
+
+CHARUSAT CSPIT — Artificial Intelligence & Machine Learning (AI & ML)
+=====================================================================
+
+Program Overview
+----------------
+- Program: Bachelor of Technology (B.Tech) in Artificial Intelligence & Machine Learning
+- Duration: 4 years (8 semesters)
+- Medium of Instruction: English
+- Intake: 60 students per batch
+- Started: Academic Year 2022-23
+- Institute: Chandubhai S. Patel Institute of Technology (CSPIT), CHARUSAT, Changa, Anand, Gujarat
+
+Admission & Eligibility
+-----------------------
+- Eligibility: Completion of 10+2 with Physics and Mathematics as compulsory subjects, along with Chemistry / Biology / Computer Science as one additional subject.
+- Entrance Exams: GUJCET and JEE Main are accepted.
+- Admission Process: Centralized counseling and seat allotment through ACPC, followed by admission procedures at CHARUSAT.
+- Required Documents: 10th and 12th mark sheets, entrance exam scorecards, government-issued ID, passport-size photos, domicile certificate (if applicable), caste certificate (if applicable).
+
+Fees & Scholarships
+-------------------
+- Approximate Total Tuition Fee (4 years): INR 5,92,000
+- Approximate First-Year Fee: INR 1,48,000
+- Scholarships: Merit-based scholarships are available based on entrance ranks and academic performance.
+
+Academic Structure
+------------------
+- Academic System: Choice Based Credit System (CBCS)
+- Components: Core subjects, elective subjects, labs, non-credit courses, and projects.
+- Attendance: Minimum attendance required as per academic regulations.
+- Evaluation: Continuous internal assessment and external semester-end examinations.
+- Project & Internship: Final year project mandatory; internships are encouraged.
+
+Curriculum Highlights
+---------------------
+- Core Areas: Artificial Intelligence, Machine Learning, Deep Learning, Natural Language Processing, Data Science, Programming, and Applied Mathematics.
+- Practical: Lab courses linked with AI & ML subjects, semester projects.
+- Electives: Offered in higher semesters with specialization options.
+
+Facilities & Resources
+----------------------
+- AI & ML Lab equipped with NVIDIA Jetson Nano kits and Xavier developer kits.
+- High-performance GPU servers and computing clusters available.
+- High Computing Lab in CSPIT A7 building, Lab No. 638 (2nd Floor).
+- Access to central library and digital learning resources.
+
+Placement & Career
+------------------
+- Placement Cell: Provides campus recruitment drives, internships, workshops, and career development sessions.
+- Highest Package: Around INR 24 LPA in recent years.
+- Average Package: Around INR 8.5 LPA.
+- Placement Percentage: Around 75% of students placed in campus drives (varies by batch).
+- Recruiters: Amazon, TCS, Infosys, Capgemini, IBM, Tech Mahindra, and other leading companies.
+- Career Roles: AI Engineer, Machine Learning Engineer, Data Scientist, Software Developer, Analyst, and Research Associate.
+
+Administrative Information
+--------------------------
+- Institute Address: Chandubhai S. Patel Institute of Technology (CSPIT), CHARUSAT, Education Campus, Changa, Anand, Gujarat, India
+- Department Email: hod.aiml@charusat.ac.in
+- Institute Email: principal.cspit@charusat.ac.in
+- Contact Number: +91-2697-265112
+- Campus Facilities: Hostel, transport, healthcare, sports facilities, student clubs (including AIML Club).
+
+Faculty Profiles (AI & ML Department)
+-------------------------------------
+
+1) Mr. Dheeraj Kumar Shringi
+- Position: Assistant Professor, AIML Department
+- Qualifications: M.Tech; pursuing Ph.D.
+- Areas of Interest: Data-driven systems, computational complexity, and AI applications.
+
+2) Mr. Gaurang Arvindbhai Patel
+- Position: Assistant Professor, AIML Department
+- Qualifications: M.Tech in CAD/CAM
+- Areas of Interest: Tribology, Surface Engineering, Nanomaterials; teaching roles in AIML courses.
+
+3) Mr. Gaurav Kumar Gautam
+- Position: Assistant Professor, AIML Department
+- Qualifications: M.Tech in Computer Engineering
+- Areas of Interest: Machine Learning, Deep Learning, Computer Vision.
+
+4) Mr. Jalpesh Vasa
+- Position: Assistant Professor, AIML Department
+- Qualifications: M.Tech
+- Areas of Interest: Programming, AI/ML applications; active in coordinating clubs and events.
+
+5) Mr. Maulik V. Shah
+- Position: Assistant Professor, AIML Department
+- Qualifications: M.Tech; pursuing Ph.D.
+- Areas of Interest: Composite materials, applied AI in engineering domains; involved in research and student training.
+
+6) Ms. Niyati V. Patel
+- Position: Faculty, AIML Department
+- Qualifications: M.Tech
+- Areas of Interest: Machine Learning, Deep Learning; active in student mentoring and research activities.
+
+7) Dr. Nirav Bhatt
+- Position: Associate Professor and Head of Department (HOD), AIML Department
+- Qualifications: M.E. in Computer Engineering
+- Areas of Interest: Data Mining, Big Data, Image Processing; leads department and student research initiatives.
+
+8) Mr. Nishant Pushpak Koshti
+- Position: Assistant Professor, AIML Department
+- Qualifications: M.Tech
+- Areas of Interest: Computer Vision, Human Detection, Applied Machine Learning; active in publishing research papers.
+
+=====================================================================
+END OF FILE
+=====================================================================
