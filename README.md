@@ -14,7 +14,8 @@
 ## 🎬 Demo
 
 🎥 **Watch the full working demo:**  
-<video src="assets/demo.mp4" width="100%" controls></video>
+[Demo Video](assets/demo.mp4)
+
 
 ---
 
